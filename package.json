@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cypress": "^13.5.1"
+  },
+  "name": "ex_tasksjs-ui",
+  "version": "1.0.0",
+  "main": "defaultFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
