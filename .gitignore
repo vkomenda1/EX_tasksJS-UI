@@ -4,3 +4,6 @@ cypress/screenshots
 cypress/results
 cypress/downloads
 .idea
+
+cypress/e2e/registrationTest
+cypress/support/findProductHelper
