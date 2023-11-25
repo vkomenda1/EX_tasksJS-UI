@@ -1,0 +1,30 @@
+{
+  "testCases": [
+    {
+      "emailFields": [
+        "{insert}",
+        "{insert}",
+        "{insert}"
+      ],
+      "passwordFields": [
+        "{insert}",
+        "{insert}",
+        "{insert}"
+      ],
+      "emailError": "Please provide an email address.",
+      "passwordError": "Please provide a password."
+    },
+    {
+      "emailFields": [
+        "{insert}",
+        "{insert}"
+      ],
+      "passwordFields": [
+        "{insert}",
+        "{insert}"
+      ],
+      "emailError": "Please provide an email address.",
+      "passwordError": "Please provide a password."
+    }
+  ]
+}
