@@ -1,0 +1,21 @@
+{
+  "addressCreatePage": {
+    "country": "Ukraine",
+    "name": "nameTest",
+    "mobileNumber": "0980010000",
+    "zipCode": "00001",
+    "address": "kh1",
+    "city": "Kyiv",
+    "state": "State"
+  },
+  "paymentShopPage": {
+    "name": "Jonson",
+    "cardNumber": "1234567890123456",
+    "expiryMonth": "10",
+    "expiryYear": "2090"
+  },
+  "feedbackForms": {
+    "author": "Jonson",
+    "comment": "Test test test test"
+  }
+}
