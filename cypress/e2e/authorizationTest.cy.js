@@ -10,7 +10,6 @@ user.email = faker.internet.email({ provider: "fakeMail.com" });
 user.password = faker.internet.password({ length: 20, memorable: true, pattern: /[A-Z]/ });
 user.securityAnswer = faker.lorem.words(3);
 
-
 describe("Succesfull Authorization", () => {
     beforeEach("Fill in registration fields...", () => {
         homePage.visit();

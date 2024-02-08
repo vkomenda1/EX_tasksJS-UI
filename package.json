@@ -5,13 +5,17 @@
   "name": "ex_tasksjs-ui",
   "version": "1.0.0",
   "main": "defaultFile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1"
+    "@faker-js/faker": "^8.3.1",
+    "@mmisty/cypress-allure-adapter": "^0.16.2",
+    "@shelex/cypress-allure-plugin": "^2.40.1",
+    "allure-commandline": "^2.27.0"
+  },
+  "scripts": {
+    "allure:clear": "rm -rf allure-report allure-results cypress/screenshots cypress/videos",
+    "cy:run:allure": "npx cypress run --env allure=true",
+    "allure:generate": "allure generate"
   }
 }
