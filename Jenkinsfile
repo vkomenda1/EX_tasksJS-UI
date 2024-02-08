@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         SHELL = '/bin/bash'
+        PATH = "/Users/komenda/.npm:${env.PATH}"
     }
     stages {
         stage('Install dependencies') {
