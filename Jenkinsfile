@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         SHELL = '/bin/bash'
-        PATH = "/usr/local/bin/npm:${env.PATH}"
+        PATH = "/usr/local/bin:${env.PATH}"
     }
     stages {
         stage('Install dependencies') {
