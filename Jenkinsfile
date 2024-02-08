@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Allure report') {
             steps {
-                sh "npm run cy:generate"
+                sh "npm run allure:generate"
                 allure(
                     results: [[path: 'allure-results']]
                 )
