@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    stages {
+        stage('Install dependencies') {
+            steps {
+                bat "npm ci"
+            }
+        }
+        stage('Cypress run') {
+            steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS'){
+                    bat "npm run allure:clear"
+                    bat "npm run cy:run:allure"
+                }
+            }
+        }
+        stage('Allure report') {
+            steps {
+                bat "npm run allure:generate"
+                allure(
+                    results: [[path: 'allure-results']]
+                )
+            }
+        }
+    }
+}
