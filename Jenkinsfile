@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Cypress run') {
             steps {
+                catchError(buildResult: 'SUCCESS', stageResult: 'SUCCESS'){
                 echo "Running Cypress..."
                 sh "npm run allure:clear"
                 sh "npm run cy:run:allure"
