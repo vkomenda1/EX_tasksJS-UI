@@ -21,6 +21,7 @@ pipeline {
                 echo "Cypress run completed."
             }
         }
+    }    
         stage('Allure report') {
             steps {
                 echo "Generating Allure report..."
